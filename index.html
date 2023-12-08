@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/logo.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>E-learning</title>
+	<meta name="desciption" content="Три головы в деле">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/logo.png" alt="logo"></div>
+			<!-- navigation bar -->
+			<ul>
+				<li><a class="active" href="">Главная</a></li>
+				<li><a href="#portfolio">О нас</a></li>
+				<li><a href="#team">Команда</a></li>
+				<li><a href="#services">Услуги</a></li>
+				<li><a href="#contactus">Контакты</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="Искать.."><img src="images/icon/search.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">Войти</a>
+			<img src="images/icon/menu.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Сообщество E-learning от трех голов</p>
+				<h5>Данный проект разработан компанией "Три головы" , мы поможем вам справится с лабораторными работами, написанием курсовых и подготовим вас к сессии</h5>
+				<div class="play">
+					<img src="images/icon/play.png" alt="play"><span><a href="https://www.youtube.com/watch?v=jEQvhO3QCDg" target="_blank">Смотреть сейчас</a></span>
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="images/icon/3heads.png" alt="svg">
+			</div>
+		</div>
+
+	</header>
+
+<!-- ABOUT -->
+	<div class="diffS" id="about_section">
+		<center><p style="font-size: 50px; padding: 100px">Пару слов об трех головых</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/aboutcopy.jpg">
+				</div>
+				<div class="side-text">
+					<h2>Чем мы занимаемся?</h2>
+					<p>Не можешь сдать Белодеда? Перепелица заметил, что ты часто опаздываешь на пары? Боишься, что лишишься стипендии и не сможешь купить сосиску в тесте? Тогда тебе к нам! Обучайся и развивай свои навыки вместе с тремя головами. Мы не только поможем вам решить конкретную задачу, мы научим вас решать их самостоятельно. Курсы по технологиям программирования, алгоритмизации и программированию, информационным системам - преподают практикующие специалисты.<br> Стань частью нашей команды!</p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- PORTFOLIO -->
+	<div class="diffS" id="portfolio">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Что мы сделали?</p></center>
+		<div class="content">
+			<p>
+				“Только вперед!” - девиз нашей команды, даже из Коня Юлия, мы сделали настоящего C++ специалиста, неообучаемых не бывает - надо лишь найти индивидуальный подход к каждому.
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<div class="contvideoblock">
+			<video src="./images/extra/3heads.mp4" autoplay loop muted></video>
+			<p>Наши успехи за год:</p>
+			<div class="smbox">
+			<span><center><div class="data">150+</div><div class="det">Выпущенных студентов</div></center></span>
+			<span><center><div class="data">20+</div><div class="det">Колличество курсов</div></center></span>
+			<span><center><div class="data">34</div><div class="det">Учаться сейчас</div></center></span>
+			<span><center><div class="data">9.3</div><div class="det">Средний баллстудентов</div></center></span>
+		
+			</div>
+		</div>
+	</div>
+
+
+<!-- TEAM -->
+	<div class="diffS" id="team">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Учителя:</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/extra/TopWorldes.jpg"></center>
+				<center><div class="card-title">Наймович Даниил</div>
+				<div id="detail">
+					<p>“Никогда не бойтесь получать новые знания, век живи - век учись“
+					</p>
+					<div class="duty"></div>
+					<a href="https://vk.com/id178235304" target="_blank"><button class="btn-danik">Follow</button></a>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/extra/pypipka.jpg"></center>
+				<center><div class="card-title">Матусевич Данила</div>
+				<div id="detail">
+					<p>“Я считаю, что за машинным обучением будущее“</p>
+					<div class="duty"></div>
+					<a href="https://vk.com/danya_matusevich" target="_blank"><button class="btn-danila">Follow</button></a>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/extra/FindMyDrops.jpg"></center>
+				<center><div class="card-title">Крамник Михаил</div>
+				<div id="detail">
+					<p>“Без труда - не сдать и лабу по ИСИТУ“</p>
+					<div class="duty"></div>
+					<a href="https://vk.com/kramnikmissa" target="_blank"><button class="btn-misha">Follow</button></a>
+				</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffS" id="services">
+		<center><p style="font-size: 50px; padding: 80px; padding-bottom: 50px; color: #fff;">Предложения</p></center>
+		</div>
+		
+		<a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Бесплатные курсы по программированию</p></div></a>
+		<a href="https://moodle.pac.by/moodle/"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Конспекты для подготовки к сессии</p></div></a>
+		<a href="https://teachmeskills.by/kursy/frontend-html-css-javascript-online"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Онлайн курсы</p></div></a>
+		<a href="https://onlinetestpad.com/ru/tests/programming"><div class="s-card"><img src="images/icon/papers.jpg"><p>Тесты для подготовки к сесии</p></div></a>
+		<a href="#contactus"><div class="s-card"><img src="images/icon/discussion.png"><p>Связаться с учителями</p></div></a>
+		<a href="https://guess-word.com/?ysclid=lpsoku8msu802807183"><div class="s-card"><img src="images/icon/q1.png"><p>Ежедневная игра угадай слово</p></div></a>
+		<a href="#contactus"><div class="s-card"><img src="images/icon/help.png"><p>24/7 Поддержка</p></div></a>
+	</div>
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/makeitfull.png"></a>
+</div>
+<div class="review">
+	<div class="diffS" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">Отзывы наших студентов</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/extra/nikita.jpg"><p>Шкрадюк Никита</p>
+				<h6>Подготовка к сессии</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Отзыв:</p>
+				<p id="content">
+					Вообщем, я так боялся сессии, ведь я всегда опаздывал на лекции Александра Александровича, что я не мог не обратится к этим парням. Михаил сиюминутно объяснил мне что к чему и для чего нужен консольный кабель. Красавчики парни!!! 
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/extra/dasha.jpg"><p>Маршалова Дарья</p>
+				<h6>C/C++</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Отзыв:</p>
+				<p id="content">
+					Языки программирования это совсем не мое, я больше люблю улыбаться и радоваться жизни , раньше я сама была членом их команды и знаю, что эти парни - помогут вам справиться с любой задачей и подготовят к чему угодно.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/extra/alina.jpg"><p>Берина Алина</p>
+				<h6>Подготовка к сессии</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Отзыв:</p>
+				<p id="content">
+					Я сходила на концерт Егора Крида и совсем забыла подготовиться к сессии, ЧЕСТНО НЕ ОЖИДАЛА, МУЖЬЯ ПОДГОТОВИЛИ МЕНЯ К БЕЛОДЕДУ ЗА 3 ДНЯ. У меня стресс всем пока
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/extra/arina.jpg"><p>Ломаченко Арина</p>
+				<h6>HTML/CSS/JS</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Отзыв:</p>
+				<p id="content">
+					Просто легенды, никогда не думала, что в HTML бывает столько тегов... Это вам не уроки информатики в 11 классе, здесь работают проффесионалы своего дела, чего только стоят "курсы Крамника по банковскому делу" приумножила свой капитал в 3 раза
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffS" id="contactus">
+		<center><p style="font-size: 60px; padding: 80px">Свяжись с нами</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:danielnaimovich@mail.ru" method="post" enctype="text/plain">
+				<label>Имя<span class="imp">*</span></label><label style="margin-left: 185px">Фамилия<span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email<span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Тема сообщения<span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Сообщение</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Отправить сообщение</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #00bfff, #64edf4); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" scrollamount="20"><div class="marqu">Три головы навсегда, умоляю тебя Белый меньше допов - больше баллов</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/logo.png" style="width: 100px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">©Три головы</p>
+				<br><p><img src="images/icon/location.png"> Академия Управления при Президенте Республики Беларусь
+				<p><img src="images/icon/phone.png"> +375(33)656-00-40<br><img src="images/icon/mail.png"> danielnaimovich@mail.ru</p>
+			</div>
+			<div class="right-col">
+				<!-- notification-->
+				<h1 style="color: #fff">Подпишись на рассылку</h1>
+				<div class="border"></div><br>
+				<p>Введи свою почту, чтобы получать новости об новых курсах</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Введите свою почту">
+					<input class="btn" type="submit" value="Подтвердить">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
